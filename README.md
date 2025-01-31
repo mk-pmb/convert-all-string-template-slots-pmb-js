@@ -13,18 +13,25 @@ slot values.
 API
 ---
 
+```javascript
+import convertTempaleSlots from 'convert-all-string-template-slots-pmb';
+```
+
+
 This module exports one function:
 
 ### convertAllStringTemplateSlots(f)
 
-Given an unary conversion function `f`, return a tag function `c`
+Given an unary conversion function `f`, return a tag function
 (a renderer for a tagged template literal)
-that converts all slot values before inserting them.
+`c` that converts all slot values before inserting them.
+
 The conversion function is actually invoked as `f(x, i, v, t)`
 where `x` is the slot value, `i` is the slot index (counted starting at 0),
 `v` is the list of all slot values, and `t` is the list of texts.
-`t[i]` is the text preceeding `x`; `t.length === v.length + 1` because
-of the (potentially empty) text after the last slot.
+`t[i]` is the text preceeding `v[i] === x`;
+`t.length === v.length + 1` because of the (potentially empty) text after
+the last slot.
 
 The `c` function holds these properties:
 
