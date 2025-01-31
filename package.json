@@ -1,5 +1,5 @@
 { "name": "convert-all-string-template-slots-pmb",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "description": "Convert any unary function into a string template tag that converts all its slot values.",
   "keywords": [
     "string template",

@@ -47,6 +47,20 @@ see [test/usage.mjs](test/usage.mjs).
 
 
 
+Similar modules
+---------------
+
+* [string-template-format-base](https://npm.im/string-template-format-base):
+  Unclear whether the conversion function is invoked with additional arguments.
+  Implementation is more complex.
+  No composition method.
+  Seems to no longer be maintained.
+
+
+
+
+
+
 Known issues
 ------------
 
